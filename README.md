@@ -1,4 +1,4 @@
-#Wildbow Web Serial Scraper for Kindle
+# Wildbow Web Serial Scraper for Kindle
 
 I couldn't find a good ebook/kindle version of worm, the fantastic web serial by wildbow (John McCrae), and subsequent works, so I decided to make one. You can now enjoy worm, pact, and twig without all of the eye strain! Until wildbow gets these things published, this is the next best option.
 
@@ -6,36 +6,23 @@ I couldn't find a good ebook/kindle version of worm, the fantastic web serial by
 
 ![Worm Header](http://parahumans.files.wordpress.com/2011/06/cityscape2.jpg)
 
-##Download
+## Download
 
 Download the ebook or run the scraper yourself.
 
-##How to run:
+## How to run:
 
 1. Clone this project
 2. Install dependencies - Ruby, zlib, and calibre
 
 
-  ```command
-  # linux
-  sudo apt-get install ruby-dev
-  sudo apt-get install zlib1g-dev
-  sudo apt-get install calibre
+```bash
+  apt-get install -y ruby-dev ruby-nokogiri zlib1g-dev calibre
+```
 
-  # osx
-  # ruby is pre-installed
-  brew install lzlib
-  brew install calibre
-  ```
-
-  In early versions, uri and open-uri were required gems, but they appear to have been rolled into the Ruby build now. 
-  ```command
-  gem install nokogiri
-  ```
 
 3. Run the shell script, with the option of choice. -h shows options, -w creates the worm ebook, -p creates pact, and -t creates twig; -a creates all three.
 
-  ```command
-  chmod +x make_ebook.sh
+  ```bash
   ./make_ebook.sh -a
   ```

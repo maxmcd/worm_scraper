@@ -1,0 +1,7 @@
+version: "3.2"
+
+services:
+  make:
+    build: .
+    volumes:
+      - ./out:/opt/out
